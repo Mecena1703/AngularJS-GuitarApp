@@ -1,17 +1,17 @@
 [
 		{
-			"name" 		 : "Acoustic Guitar",
-			"description": "Acoustic, electro-acoustic and classical guitars, from leading brands.",
-			"image"	:  "Acoustic"
+			"Name" 		 : "Acoustic Guitar",
+			"Description": "Acoustic, electro-acoustic and classical guitars, from leading brands.",
+			"Image"	:  "Acoustic"
 		},
 		{
-			"name" 		 : "Electric Guitar",
-			"description": "Ever-popular solid-body guitars, to hollow-body guitars and archtops.",
-			"image"	:  "Electric"
+			"Name" 		 : "Electric Guitar",
+			"Description": "Ever-popular solid-body guitars, to hollow-body guitars and archtops.",
+			"Image"	:  "Electric"
 		},
 		{
-			"name" 		 : "Bass Guitar",
-			"description": "Classic Fender Bass, Precision and Jazz basses, to Gibson Thunderbirds.",
-			"image"	:  "Bass"
+			"Name" 		 : "Bass Guitar",
+			"Description": "Classic Fender Bass, Precision and Jazz basses, to Gibson Thunderbirds.",
+			"Image"	:  "Bass"
 		}
 ]
