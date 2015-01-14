@@ -1,0 +1,39 @@
+
+<!-- SEARCH AREA -->
+	 <div class="search">
+		<h1>Offshore Guitar Store</h1>
+		<label>Search Guitar</lavel>
+		<input type="text" ng-model="query" >
+	
+		<label>Sort by:
+			<select ng-model="orderGuitar">
+				<option value="Name" selected>Naziv</option>
+				<option value="Price">Cijena</option>
+				<option value="DateAddedJSON">Datum</option>
+			</select>
+		</label>
+		<br>
+		<label>
+			<input type="radio" ng-model="direction" name="direction" checked>
+			Ascending
+		</label>
+		<label>	
+			<input type="radio" ng-model="direction" name="direction" value="reverse" >
+			Descending
+		</label>
+	</div>
+	<!--END of SEARCH AREA -->
+<ul> 
+	<li ng-animate="'animate'" class="itemHolder" ng-repeat="item in guitarVariable | filter:query | orderBy:orderGuitar:direction">
+	<a href="#/details/{{guitarVariable.indexOf(item)}}">
+	<img ng-src="img/{{item.Image}}.jpg">
+		<div>
+			<h3> {{item.Name | uppercase }}</h3>
+			<p> {{item.Description}}</p>
+			<p>{{item.Price | currency:'KN ' }}</p>
+			<p>{{item.DateAddedJSON | date }}</p>
+			<p>{{item.Category | uppercase }}</p>
+		</div>
+	</a>
+	</li>
+</ul>

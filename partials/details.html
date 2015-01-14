@@ -1,0 +1,18 @@
+<div class="details" ng-model="guitarVariable">
+    <img class="magnifyImg" ng-src="img/{{guitarVariable[whichGuitar].Image}}.jpg">
+    <div>
+        <h2> <strong>{{guitarVariable[whichGuitar].Name | lowercase }}</h2>
+        <p class="rightDate magnifyDate">Price Revised on: {{guitarVariable[whichGuitar].DateAddedJSON | date:'MM/yy'}}</p>
+        <p class="rightPrice magnifyPrice">${{guitarVariable[whichGuitar].Price | number:0 }}</p>
+        <p> {{guitarVariable[whichGuitar].Description}}</p>
+        <p class="longDescription">{{guitarVariable[whichGuitar].LongDescription}}</p>
+        <!-- added this navigation for switching between different guitars -->
+                <div class="navigation">
+                    <a href="#/details/{{prevGuitar}}"><&nbsp; Previous</a>
+                    <a href="#/details/{{nextGuitar}}">Next &nbsp;></a>
+                </div>
+        <br><hr><br>
+        <a href="index.html" class="link">« Go back to Search</a>
+        <a href="#/test/{{whichGuitar}}" class="checkout">Checkout &raquo;</a>
+    </div>
+</div>
